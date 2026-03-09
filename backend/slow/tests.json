@@ -1,0 +1,12 @@
+{
+  "tests": [
+    {
+      "name": "Slow 10sec",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": {"ok": true},
+      "bodyMatcher": "partial"
+    }
+  ]
+}

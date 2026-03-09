@@ -1,0 +1,12 @@
+{
+  "tests": [
+    {
+      "name": "Medium 3sec",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": {"ok": true},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
