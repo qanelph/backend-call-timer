@@ -50,7 +50,7 @@ const Index = () => {
   return (
     <div className="bench-root">
       <header className="bench-header">
-        <span className="bench-title">BENCHMARK</span>
+        <span className="bench-title">BENCHMARKK</span>
         <span className="bench-sub">latency tester</span>
       </header>
 
