@@ -1,0 +1,13 @@
+{
+  "tests": [
+    {
+      "name": "Log call",
+      "method": "POST",
+      "path": "/",
+      "body": {"button_label": "200ms", "elapsed_ms": 215},
+      "expectedStatus": 200,
+      "expectedBody": {"ok": true},
+      "bodyMatcher": "partial"
+    }
+  ]
+}

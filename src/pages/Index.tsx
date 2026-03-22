@@ -39,11 +39,21 @@ const Index = () => {
       setStates((prev) =>
         prev.map((s, i) => (i === index ? { status: "done", elapsed } : s))
       );
+      fetch("https://functions.poehali.dev/3a005c8b-bee3-4bce-9c86-270a57fc37c1", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ button_label: FUNCTIONS[index].label, elapsed_ms: elapsed }),
+      });
     } catch {
       const elapsed = Math.round(performance.now() - start);
       setStates((prev) =>
         prev.map((s, i) => (i === index ? { status: "error", elapsed } : s))
       );
+      fetch("https://functions.poehali.dev/3a005c8b-bee3-4bce-9c86-270a57fc37c1", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ button_label: FUNCTIONS[index].label, elapsed_ms: elapsed }),
+      });
     }
   };
 
