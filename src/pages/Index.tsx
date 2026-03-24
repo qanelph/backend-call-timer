@@ -6,12 +6,12 @@ const FUNCTIONS = [
     url: "https://functions.poehali.dev/339be580-835f-4028-ab8b-1abcb5bb0816",
   },
   {
-    label: "3s",
-    url: "https://functions.poehali.dev/dad5f853-5074-4fd0-90ff-3d938ec53dfe",
+    label: "30s",
+    url: "https://functions.poehali.dev/01f12b8e-7bbd-49bd-bd44-a5aae2b6890a",
   },
   {
-    label: "10s",
-    url: "https://functions.poehali.dev/527f7987-2f8a-4b83-a219-8cfa5239bad1",
+    label: "50s",
+    url: "https://functions.poehali.dev/44de859c-502d-4e18-a2dc-4e6427a44937",
   },
 ];
 
