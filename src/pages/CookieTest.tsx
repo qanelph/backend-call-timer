@@ -23,7 +23,6 @@ const CookieTest = () => {
     try {
       const res = await fetch(COOKIE_TEST_URL, {
         method: "GET",
-        credentials: "include",
       });
       const data = await res.json();
       setResult(data);
