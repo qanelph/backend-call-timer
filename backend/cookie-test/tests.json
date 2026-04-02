@@ -1,0 +1,12 @@
+{
+  "tests": [
+    {
+      "name": "GET cookies",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": {"cookies": {}, "total": 0},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
