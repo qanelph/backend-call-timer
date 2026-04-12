@@ -61,7 +61,7 @@ const Index = () => {
     <div className="bench-root">
       <header className="bench-header">
         <span className="bench-title">БЕНЧМАРК</span>
-        <span className="bench-sub">тест задержки</span>
+
       </header>
 
       <main className="bench-main">
