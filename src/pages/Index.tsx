@@ -64,7 +64,9 @@ const Index = () => {
       <header className="bench-header">
         <span className="bench-title">БЕНЧМАРК</span>
         <button className="bench-theme-toggle" onClick={toggle} title="Переключить тему">
-          {theme === "dark" ? "☀️" : "🌙"}
+          <span className="bench-toggle-track">
+            <span className="bench-toggle-thumb" />
+          </span>
         </button>
       </header>
 
