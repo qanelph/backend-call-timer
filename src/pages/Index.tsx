@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTheme } from "@/hooks/useTheme";
 
 const FUNCTIONS = [
   {
@@ -26,6 +27,7 @@ const Index = () => {
   const [states, setStates] = useState<BtnState[]>(
     FUNCTIONS.map(() => ({ status: "idle", elapsed: null }))
   );
+  const { theme, toggle } = useTheme();
 
   const call = async (index: number) => {
     setStates((prev) =>
@@ -61,7 +63,9 @@ const Index = () => {
     <div className="bench-root">
       <header className="bench-header">
         <span className="bench-title">БЕНЧМАРК</span>
-
+        <button className="bench-theme-toggle" onClick={toggle} title="Переключить тему">
+          {theme === "dark" ? "☀️" : "🌙"}
+        </button>
       </header>
 
       <main className="bench-main">
