@@ -62,6 +62,11 @@ const Index = () => {
   return (
     <div className="bench-root">
       <header className="bench-header">
+        <img
+          src="https://cdn.poehali.dev/projects/8df8d5fb-fd94-4941-b0e3-1bfc9a240639/files/ce03cdb1-07e5-458b-8b2f-66b858e8156a.jpg"
+          alt="пони"
+          style={{ width: 100, height: 100, borderRadius: "50%", marginBottom: "0.75rem", objectFit: "cover" }}
+        />
         <span className="bench-title">БЕНЧМАРК</span>
         <button className="bench-theme-toggle" onClick={toggle} title="Переключить тему">
           <span className="bench-toggle-track">
